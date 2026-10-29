@@ -1,0 +1,14 @@
+# Build output. `lib/` is committed on purpose (readers can inspect the shipped
+# artifact), so it is NOT ignored here; an installation should rebuild it anyway.
+
+# Dependencies
+node_modules/
+
+# Editor and OS noise
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Logs
+*.log

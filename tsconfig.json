@@ -1,0 +1,22 @@
+{
+  "extends": "/app/tsconfig.base.client.json",
+  "compilerOptions": {
+    "rootDir": "/home/node/default/browser-compat-package/src",
+    "outDir": "/home/node/default/browser-compat-package/lib/types",
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "composite": false,
+    "incremental": false,
+    "skipLibCheck": true,
+    "types": ["/home/node/default/browser-compat-package/src/css-modules.d.ts"],
+    "typeRoots": ["/app/scripts/types", "/app/node_modules/@types"],
+    "paths": {
+      "@deepseek-ai/cordis": ["/app/vendor/cordis/lib/index.d.ts"],
+      "@deepseek-ai/dsh-client-locale/client": ["/app/packages/client/locale/lib/types/client/index.d.ts"],
+      "@deepseek-ai/dsh-client-ui-settings/client": ["/app/packages/client/ui-settings/lib/types/client/index.d.ts"],
+      "@deepseek-ai/dsh-client-ui-slots": ["/app/packages/client/ui-slots/lib/types/index.d.ts"]
+    }
+  },
+  "include": ["/home/node/default/browser-compat-package/src"],
+  "references": []
+}
